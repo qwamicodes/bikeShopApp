@@ -13,6 +13,10 @@ import { statusBarConfig } from "../../Variable";
 import BottomNav from "../components/BottomNav";
 
 const Cart = ({ navigation }) => {
+  const handleGoBack = () => {
+    navigation.goback();
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={{ flexBasis: "90%", marginHorizontal: 10 }}>
